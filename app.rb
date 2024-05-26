@@ -1,9 +1,14 @@
 require "sinatra"
 require "sinatra/reloader"
+require "json"
+require "http"
 
 get("/") do
-  "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+  erb(:home_page)
+end
+
+post("/astronomy_pic") do
+  
+  nasa_url = "https://api.nasa.gov/planetary/apod?api_key=#{ENV["NASA_KEY"]}"
+  erb(:process_form)
 end
