@@ -1,18 +1,5 @@
-# sinatra-template
+ASTRO PIC "Astronomy picture of the day"
 
-Use this repository to create new Sinatra apps. 
+Astro pic is a dynamic ruby web app that provides the user with a different picture each day of our fascinating universe along with a brief explanation writtern by a professional Astronomer. That's done by using the NASA API. 
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+Hope you enjoy this wonderful experience!
