@@ -7,8 +7,8 @@ get("/") do
   erb(:home_page)
 end
 
-post("/astronomy_pic") do
-  
+post("/astronomy_pic") do  
+
   nasa_url = "https://api.nasa.gov/planetary/apod?api_key=#{ENV["NASA_KEY"]}"
   raw_result = HTTP.get(nasa_url ).to_s
   parsed_result = JSON.parse(raw_result)
