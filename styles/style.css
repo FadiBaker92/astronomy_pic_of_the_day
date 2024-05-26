@@ -1,8 +1,6 @@
 body {
- 
   background-image: url(/thumbnails/background.png);
   background-color: #16161a;
-
 }
 
 header.header{
@@ -18,7 +16,6 @@ header .logo {
 header .nav_bar {
   font-family: 'Quattrocento', serif;
   font-size: 20px;
- 
 }
 header .nav_bar a{
   color: #2cb67d;
@@ -27,13 +24,15 @@ header .nav_bar a{
 a{
   text-decoration: none;
 }
+.nav_bar a:hover {
+  color: #7f5af0;
+}
 .home_page_container{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-top: 120px;
-
 }
 .home_page_text {
   text-align: center;
@@ -62,6 +61,10 @@ button {
   cursor: pointer;
   margin-top: 25px;
   color: #2cb67d;
+}
+button:hover {
+  background-color: #2cb67d;
+  color: #7f5af0;
 }
 
 span {
