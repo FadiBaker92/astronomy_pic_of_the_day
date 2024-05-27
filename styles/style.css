@@ -102,7 +102,6 @@ img.hero_image{
   justify-content: center;
   align-items: center;
   width: 500px;
-  margin-left: 20px;
   flex-direction: column;
 }
 
